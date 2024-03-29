@@ -8,10 +8,12 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
    background-position: center center;
+   padding: 0;
+   margin: 0;
 }
 .Area{
-    width:98vw;
-    height: 92vh;
+    width:100vw;
+    height:100vh;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -25,7 +27,8 @@ body{
 .LoginTxt{
     font-family: Neyagawa;
     color: #ccc;
-    font-size: 40px;
+    margin: 0;
+    font-size: 60px;
 }
 
 
@@ -52,7 +55,7 @@ body{
 
 .CadastroLink, .Link{
     color: #ccc;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -83,11 +86,11 @@ body{
 
 .Enviar{
     margin-top: 50px;
-    padding-top: 20px !important;
-    padding: 10px 50px;
+    padding-top: 15px !important;
+    padding: 5px 35px;
     font-family: Neyagawa;
     font-weight: bold;
-    font-size: 20PX;
+    font-size: 18px;
     text-align: center;
     background-color: #487cff;
     color:white;
@@ -98,11 +101,12 @@ body{
 }
 
 .Error{
-    color:#f99090;
+    color:#ff0000;
+    text-shadow: black 1px 0 6px, 1px 1px black;
     font-weight: bold;
     width: 80%;
     margin-left: 10%;
-    font-size: 18px;
+    font-size: 16px;
 
 }
 
@@ -145,7 +149,7 @@ body{
     color:#38d3ff;
     font-weight: bold;
     font-size: 20px;
-    width: 8%;
+    width: 6%;
     height: 10%;
     border-radius: 10px;
     border: none;
