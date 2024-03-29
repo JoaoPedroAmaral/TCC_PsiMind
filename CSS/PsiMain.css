@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Neyagawa;
+    src: url(../FONT/NeyagawaDemoRegular.ttf);
+  }
+
+body{
+    background-image: url(../IMG/BK1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+   background-position: center center;
+}
+.Area{
+    width:98vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-align: left;
+}
+
+/*.LeftSide, .RightSide{
+    border: solid #000;
+}*/
+
+.LoginTxt{
+    font-family: Neyagawa;
+    color: #ccc;
+    font-size: 40px;
+}
+
+
+.CadDiv{
+    margin-top: 10px;
+}
+
+.LinkDiv{
+    text-align: right;
+    margin-right: 25%;
+}
+
+.PerfilIcon{
+    width: 7%;
+}
+
+.AreaInput{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top:10px;
+ margin-bottom: 10px;
+}
+
+.CadastroLink, .Link{
+    color: #ccc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.CadastroLink:hover, .Link:hover{
+    color:#38d3ff;
+}
+
+
+
+.Login:focus, .Senha:focus{
+    color:#ccc;
+    font-weight: bold;
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+.Login, .Senha{
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    width: 50%;
+    height: 26px;
+    background-color: transparent;
+    border-bottom:2px solid #ccc ;
+    color:#ccc;
+    font-weight: bold;
+}
+
+.Enviar{
+    margin-top: 50px;
+    padding-top: 20px !important;
+    padding: 10px 50px;
+    font-family: Neyagawa;
+    font-weight: bold;
+    font-size: 20PX;
+    text-align: center;
+    background-color: #487cff;
+    color:white;
+    border-radius: 10px;
+    border: none;
+  transition: transform 0.2s, opacity 0.2s;
+
+}
+
+.Error{
+    color:#f99090;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 18px;
+
+}
+
+.Enviar:hover{
+    background-color: #38d3ff;
+    color:#2a51b4;
+    transform: scale(1.15);
+    transition: transform 0.1s, opacity 0.1s;
+    
+}
+
+
+.Enviar:active{
+    background-color: #487cff;
+    color:white;
+    transform: scale(1.0);
+}
+
+.LeftSide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+ 
+}
+
+.RightSide{
+    width: 50%;
+    height: 80%;
+    text-align: center;
+}
+
+.PsiMind{
+    width: 70%;
+
+}
+
+.BtnExit{
+    background-color: transparent;
+    color:#38d3ff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 8%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+.BtnExit:hover{
+    background-color: #38d3ff;
+    color: #2a51b4;
+    transition: transform 0.2s, opacity 0.2;
+}
+
+.BtnExit:active{
+    transform: scale(0.9);
+}
+
+.Exit{
+    display: flex;
+    align-items:end;
+    justify-content:end;
+}
