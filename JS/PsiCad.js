@@ -43,7 +43,7 @@ idDM.addEventListener('change', function() {
         LogS.classList.replace('SenhaDark', 'SenhaLight');
         LogSN.classList.replace('SenhaDark', 'SenhaLight');
         LogEmail.classList.replace('EmailDark', 'EmailLight');
-        BTNCad.classList.replace('EnviarDark', 'EnviarLight'); 
+        BTNCad.classList.replace('EnviarDark', 'EnviarLight')
     }
 });
 
