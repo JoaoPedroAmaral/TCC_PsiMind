@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/CadastroPsiMind.css"></link>
-
     <title>Cadastro PsiMind</title>
 </head>
 <body>
-    <div class="Area"></div>
+    <div class="backgroundLightMode" id="BKMode">
+        <div class="Area">
+            <div class="Exit">
+                <input type="checkbox" class="DarkMode" id="DarkMode"/>
+                <label for="DarkMode" id="DM"></label>
+                <button class="BtnExitLightMode" id="BTNMode">x</button>
+            </div>
+            <div class="AreaCadastro">
+                <h1 class="CadastroTextLightMode" id="CadastroText">CADASTRO</h1>
+                <div class="AreaInput">
+                    <img class="PerfilIcon" id="Icon" src="IMG/perfilIconDK.png" alt="">
+                    <input type="text" class="LoginLight" placeholder="Digite seu Login" id="Log">
+                </div>
+                <div class="AreaInput">
+                    <img class="PerfilIcon IconSenhaLight" id="IconSenha" src="IMG/senhaIconDK.png" alt="">
+                    <input type="password" class="SenhaLight" placeholder="Digite sua senha" id="LogS">
+                </div>
+                <div class="AreaInput">
+                    <img class="PerfilIcon IconSenhaLight" id="IconSenhaN" src="IMG/senhaIconDK.png" alt="">
+                    <input type="password" class="SenhaLight" placeholder="Repita sua senha" id="LogSN">
+                </div>
+                <div class="AreaInput">
+                    <img class="PerfilIcon IconSenhaLight" id="IconEmail" src="IMG/emailIconDK.png" alt="">
+                    <input type="text" class="EmailLight" placeholder="Digite seu e-mail" id="LogEmail">
+                </div>
+                <a href="index.html">
+                <button class="EnviarLight" id="BTNCad"> Cadastrar </button></a>
+
+                <div class="Error">
+                    <p>ERRO! Exemplo de erros que podem dá na aba de login como cadastro não encontrado e etc..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/PsiCad.js"></script>
 </body>
 </html>

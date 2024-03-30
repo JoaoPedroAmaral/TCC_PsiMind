@@ -1,18 +1,286 @@
+@font-face {
+    font-family: Neyagawa;
+    src: url(../FONT/NeyagawaDemoRegular.ttf);
+  }
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #ccc;
 }
+
+.backgroundLightMode{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#38d3ff, #ccc);
+    height: 100vh;
+    width: 100%;
+} 
 
 .Area{
     background-image: url(../IMG/background_cadastro.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 100%;
     opacity: 0.9;
+}
+
+.Exit{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-gap: 5px 8px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.BtnExitDarkMode{
+    background-color: transparent;
+    color:#38d3ff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 6%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+}
+
+.BtnExitDarkMode:hover{
+    background-color: #38d3ff;
+    color: #2a51b4;
+    transition: transform 0.2s, opacity 0.2;
+}
+
+.BtnExitDarkMode:active{
+    transform: scale(0.9);
+}
+
+
+.BtnExitLightMode{
+    background-color: transparent;
+    color:#2a51b4;
+    font-weight: bold;
+    font-size: 20px;
+    width: 6%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+}
+
+.BtnExitLightMode:hover{
+    background-color: white;
+    color: #2a51b4;
+    transition: transform 0.2s, opacity 0.2;
+}
+
+.BtnExitLightMode:active{
+    transform: scale(0.9);
+}
+
+label{
+    width: 80px;
+    height: 25px;
+    position: relative;
+    display: block;
+    background: #ececec;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:after{
+    content: "";
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+label:active:after{
+    width: 35px;
+}
+
+.DarkMode{
+    position:absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.DarkMode:checked + label{
+    background: #111;
+}
+
+.DarkMode:checked + label::after{
+    left: 94%;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #888, #2a2a2a);
+}
+
+.backgroundDarkMode{
+    background: linear-gradient(#162c63, #000);
+    /* background: #2a2a2a; */
+}
+
+.AreaCadastro{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.AreaInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.PerfilIcon{
+    width: 3%;
+    margin-right: 10px;
+}
+
+
+.CadastroTextLightMode{
+    font-family: Neyagawa;
+    color:#000;
+    margin: 0;
+}
+
+.CadastroTextDarkMode{
+    font-family: Neyagawa;
+    color:#ccc;
+    margin: 0;
+}
+
+.LoginLight:focus, .SenhaLight:focus, .EmailLight:focus{
+    color:#000;
+    font-weight: bold;
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+
+.LoginLight, .SenhaLight, .EmailLight{
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    width: 20%;
+    height: 26px;
+    background-color: transparent;
+    border-bottom:2px solid #000 ;
+    color:#000;
+    font-weight: bold;
+}
+
+.LoginLight::placeholder, .SenhaLight::placeholder, .EmailLight::placeholder{
+    color: #000;
+    opacity: 0.6;
+}
+
+.LoginDark:focus, .SenhaDark:focus, .EmailDark:focus{
+    color:#ccc;
+    font-weight: bold;
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+.LoginDark, .SenhaDark, .EmailDark{
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    width: 20%;
+    height: 26px;
+    background-color: transparent;
+    border-bottom:2px solid #ccc ;
+    color:#ccc;
+    font-weight: bold;
+}
+
+.LoginDark::placeholder, .SenhaDark::placeholder, .EmailDark::placeholder{
+    color: #ccc;
+    opacity: 0.6;
+}
+
+.EnviarLight{
+    margin-top: 50px;
+    padding-top: 15px !important;
+    padding: 5px 35px;
+    font-family: Neyagawa;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    background-color: #38d3ff;
+    color:#000;
+    border-radius: 10px;
+    border: none;
+  transition: transform 0.2s, opacity 0.2s;
+
+}
+
+.EnviarLight:hover{
+    background-color: white;
+    color:#000;
+    transform: scale(1.15);
+    transition: transform 0.1s, opacity 0.1s;
+    
+}
+
+
+.EnviarLight:active{
+    background-color: #38d3ff;
+    color:#000;
+    transform: scale(1.0);
+}
+
+.EnviarDark{
+    margin-top: 50px;
+    padding-top: 15px !important;
+    padding: 5px 35px;
+    font-family: Neyagawa;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    background-color: #ccc;
+    color:#2a51b4;
+    border-radius: 10px;
+    border: none;
+  transition: transform 0.2s, opacity 0.2s;
+
+}
+
+.EnviarDark:hover{
+    background-color: #38d3ff;
+    color:#2a51b4;
+    transform: scale(1.15);
+    transition: transform 0.1s, opacity 0.1s;
+    
+}
+
+
+.EnviarDark:active{
+    background-color: white;
+    color:#2a51b4;
+    transform: scale(1.0);
+}
+
+.Error{
+    display: flex;
+    color:#ff0000;
+    text-shadow: black 1px 0 6px, 1px 1px black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
 }

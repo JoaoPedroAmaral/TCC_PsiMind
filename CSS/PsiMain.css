@@ -12,12 +12,14 @@ body{
    margin: 0;
 }
 .Area{
-    width:100vw;
-    height:100vh;
+    width:98vw;
+    height:95vh;
     display: flex;
     align-items: center;
     justify-content:space-around;
     text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 /*.LeftSide, .RightSide{
@@ -42,7 +44,8 @@ body{
 }
 
 .PerfilIcon{
-    width: 7%;
+    width: 5%;
+    margin-right: 10px;
 }
 
 .AreaInput{
@@ -84,6 +87,11 @@ body{
     font-weight: bold;
 }
 
+.Login::placeholder, .Senha::placeholder{
+    color: #ccc;
+    opacity: 0.6;
+}
+
 .Enviar{
     margin-top: 50px;
     padding-top: 15px !important;
@@ -104,10 +112,10 @@ body{
     color:#ff0000;
     text-shadow: black 1px 0 6px, 1px 1px black;
     font-weight: bold;
-    width: 80%;
-    margin-left: 10%;
     font-size: 16px;
-
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .Enviar:hover{
@@ -153,7 +161,8 @@ body{
     height: 10%;
     border-radius: 10px;
     border: none;
-    margin-right: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 .BtnExit:hover{
